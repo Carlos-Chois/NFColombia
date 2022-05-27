@@ -9,3 +9,7 @@ model-viewer {
     margin: 0 auto;
     padding-top: 50px;
 }
+
+body{
+    font-family: 'VT323', monospace;
+}
