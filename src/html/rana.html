@@ -3,7 +3,7 @@
 <html lang="es">
 
 <head>
-    <title>curi</title>
+    <title>Rana</title>
 
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/style.css" />
@@ -14,88 +14,62 @@
         rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet" />
     <script src="js/wow.min.js"></script>
-
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
 </head>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="mr-auto barra">
-            <a class="navbar-brand" href="#"> <img src="../../img/NFColombia Logo.png" class="img-fluid" width="200px"
-                    alt="Responsive foto"></a>
-            <h1 class="text-white">Inicio</h1>
+            <a class="navbar-brand" href="../../index.html"> <img src="../../img/NFColombia Logo.png" class="img-fluid"
+                    width="200px" alt="Responsive foto"></a>
         </div>
     </nav>
 </header>
 
-<body class="light-blue accent-4">
-
-
-
-    <div class="container mt-5 ">
-        <div class="col">
-            <div class="card opacity-25 ">
-
-                <div class="view overlay">
-                    <img class="card-img-top" width="2px" src="../../img/rana2.png" alt="Card image cap">
+<body class="light-blue accent-4" style="font-family: 'VT323', monospace;">
+    <div class="row mt-5">
+        <div class="col-1"></div>
+        <div class="col-10 bg bg-dark text-white">
+            <div class="text-center mt-5">
+                <div class="view overlay text-center">
+                    <img class="mx-auto d-block pb-5" src="../../img/rana2.png" width="400px">
                 </div>
-                <div class="card-body">
-                    <h4 class="bold"> Nombre </h4>
-                    <p>Cui</p>
-                    <h4>Nombre cientifico</h4>
-                    <p>Cavi</p>
-                    <p class="cart-text display-5">
-                    <h4 class="bold"> Descripción </h4>
-                    Perteneciente a la familia de roedores propio de sudametica, mas conocido como cui domestico o
-                    conejillo de indias, tiene potentes insisivos los cuales sirven para roer cualquier alimento, esto
-                    generando que sus dientes sean naranjas por la cantidad de hierro que estos tienen en su sistema
-                    oseo.
-                    <h4 class="bold"> Datos</h4>
-                    Tienen 30 millones de años haciendolos de los primeros mamiferos de la historia del planeta tierra,
-                    muchos de estos cuis son mascotas domesticas, su estructura osea presenta gran cantidad de hierro
-                    para poder roer disitnos alimentos de ahi su coloracion naranja
+                <div class="display-4">
+                    <h4 style="font-size: 100px">Nombre</h4>
+                    <p>Rana</p>
+                    <h4 style="font-size: 100px">Nombre Cientifico</h4>
+                    <p>Dendropsophus labialis</p>
+                    <p>
+                    <h4 style="font-size: 100px">Descripción </h4>
+                    Mide hasta 4cm de longitud su piel es generalmente verde con manchas castañas o pardas, carece de
+                    membrana interdactilares en las manos, vive cerca de humedales, charcos, estanques pantanos u otras
+                    aguas calmadas.
+                    <h4 style="font-size: 100px">Datos</h4>
+                    Son animales nocturnos y se alimentan principalmente de insectos, suelen estar en el suelo, arboles,
+                    piedras y constucciones.
                     </p>
-
+                    <h4 style="font-size: 100px">Miralo desde tu teléfono</h4>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 d-flex justify-content-center">
+                        <model-viewer bounds="tight" enable-pan src="../../modelos/Rana.glb" ar
+                            ar-modes="scene-viewer webxr quick-look" camera-controls environment-image="neutral"
+                            poster="poster.webp" shadow-intensity="1" auto-rotate>
+                            <div class="progress-bar hide" slot="progress-bar">
+                                <div class="update-bar"></div>
+                            </div>
+                            <button class="btn btn-light btn-outline-dark rounded-pill" style="font-size: 20px;"
+                                slot="ar-button" id="ar-button">
+                                <img src="../../img/logo-ar.png" style="padding-right: 20px" />Activar Realidad
+                                Aumentada
+                            </button>
+                        </model-viewer>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="col-1"></div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
-    <script type="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
