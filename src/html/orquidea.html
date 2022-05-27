@@ -29,43 +29,49 @@
 </header>
 
 <body class="light-blue accent-4">
-    <div class="container mt-5 ">
-        <div class="col-md">
-            <div class="card opacity-25">
-
-                <div class="view overlay">
-                    <img class="card-img-top" width="2px" src="../../img/Orquidea.png" alt="Card image cap">
+    <div class="row mt-5">
+        <div class="col-1"></div>
+        <div class="col-10 bg bg-dark text-white">
+            <div class="text-center mt-5">
+                <div class="view overlay text-center">
+                    <img class="mx-auto d-block" src="../../img/Orquidea.png">
                 </div>
-                <div class="card-body">
-                    <h4 class="bold">Nombre</h4>
+                <div class="display-4">
+                    <h4 style="font-size: 100px">Nombre</h4>
                     <p>Orquídea</p>
-                    <h4>Nombre Cientifico</h4>
+                    <h4 style="font-size: 100px">Nombre Cientifico</h4>
                     <p>Orchidaceae</p>
-                    <p class="cart-text display-5">
-                    <h4 class="bold">Descripción </h4>
+                    <p>
+                    <h4 style="font-size: 100px">Descripción </h4>
                     La orquídea es una planta que se caracteriza por su flor de tres sépalos: 2 pétalos y un lobelo
                     donde se posa el insecto polinizador.</br>
                     Además, su estructura reproductiva, llamada ginostemo o comúnmente columna, se encuentra descubierta
                     en medio de sus sépalos.
-                    <h4 class="bold">Datos</h4>
+                    <h4 style="font-size: 100px">Datos</h4>
                     Perteneciente a una de las familias con mayor numero de especies,
                     existen algunas orquideas que pueden medir casi 10 metros.
                     </p>
-                    <h4 class="bold">Miralo desde tu teléfono</h4>
-                    <model-viewer bounds="tight" enable-pan src="../../modelos/Orquidea.glb" ar
-                        ar-modes="scene-viewer webxr quick-look" camera-controls environment-image="neutral"
-                        poster="poster.webp" shadow-intensity="1" auto-rotate>
-                        <div class="progress-bar hide" slot="progress-bar">
-                            <div class="update-bar"></div>
-                        </div>
-                        <button slot="ar-button" id="ar-button">
-                            Activar Realidad Aumentada
-                            <img src="../../img/logo-ar.png" />
-                        </button>
-                    </model-viewer>
+                    <h4 style="font-size: 100px">Miralo desde tu teléfono</h4>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 d-flex justify-content-center">
+                        <model-viewer bounds="tight" enable-pan src="../../modelos/Orquidea.glb" ar
+                            ar-modes="scene-viewer webxr quick-look" camera-controls environment-image="neutral"
+                            poster="poster.webp" shadow-intensity="1" auto-rotate>
+                            <div class="progress-bar hide" slot="progress-bar">
+                                <div class="update-bar"></div>
+                            </div>
+                            <button class="btn btn-light btn-outline-dark rounded-pill" style="font-size: 20px;"
+                                slot="ar-button" id="ar-button">
+                                <img src="../../img/logo-ar.png" style="padding-right: 20px" />Activar Realidad
+                                Aumentada
+                            </button>
+                        </model-viewer>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="col-1"></div>
     </div>
 
 
